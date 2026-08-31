@@ -1,0 +1,50 @@
+{
+    "baseline_accuracy_pct": 97.0,
+    "mean_perturbed_accuracy_pct": 77.56,
+    "agricultural_robustness_index_ari": 77.56,
+    "accuracy_retention_rate_pct": 79.95,
+    "corruption_breakdown": {
+        "1. Baseline (Clean Pristine)": {
+            "evaluated_samples": 300,
+            "correct_predictions": 291,
+            "accuracy_pct": 97.0,
+            "performance_status": "STABLE"
+        },
+        "2. Blazing Sunlight (Overexposed)": {
+            "evaluated_samples": 300,
+            "correct_predictions": 286,
+            "accuracy_pct": 95.33,
+            "performance_status": "STABLE"
+        },
+        "3. Dusk / Overcast (Low-light)": {
+            "evaluated_samples": 300,
+            "correct_predictions": 287,
+            "accuracy_pct": 95.67,
+            "performance_status": "STABLE"
+        },
+        "4. Wind Motion Blur": {
+            "evaluated_samples": 300,
+            "correct_predictions": 205,
+            "accuracy_pct": 68.33,
+            "performance_status": "VULNERABLE"
+        },
+        "5. Lens Fog / Dew Condensation": {
+            "evaluated_samples": 300,
+            "correct_predictions": 137,
+            "accuracy_pct": 45.67,
+            "performance_status": "VULNERABLE"
+        },
+        "6. Low-Cost IoT Sensor Noise": {
+            "evaluated_samples": 300,
+            "correct_predictions": 193,
+            "accuracy_pct": 64.33,
+            "performance_status": "VULNERABLE"
+        },
+        "7. Lens Dirt / Raindrop Occlusion": {
+            "evaluated_samples": 300,
+            "correct_predictions": 288,
+            "accuracy_pct": 96.0,
+            "performance_status": "STABLE"
+        }
+    }
+}

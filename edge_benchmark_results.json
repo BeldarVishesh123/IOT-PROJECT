@@ -1,0 +1,134 @@
+{
+    "model_architecture": "MobileNetV3-Large",
+    "parameters_summary": {
+        "total_parameters": 4221247,
+        "trainable_parameters": 4221247,
+        "estimated_gflops": 0.219,
+        "estimated_macs_millions": 109.5
+    },
+    "runtimes_benchmarked": {
+        "PyTorch_FP32": {
+            "iterations": 100,
+            "mean_latency_ms": 8.57,
+            "median_latency_ms": 8.44,
+            "p90_latency_ms": 8.86,
+            "p95_latency_ms": 9.29,
+            "p99_latency_ms": 10.78,
+            "min_latency_ms": 8.28,
+            "max_latency_ms": 11.12,
+            "throughput_fps": 116.6,
+            "memory_rss_mb": 718.22,
+            "model_size_mb": 16.3,
+            "runtime": "PyTorch FP32 (CPU)",
+            "energy_profile": {
+                "Raspberry_Pi_4B (Quad-Cortex-A72 @ 1.5GHz)": {
+                    "active_power_w": 3.8,
+                    "energy_per_inference_mj": 32.57,
+                    "estimated_inferences_per_3000mah_battery": "1,658,171"
+                },
+                "Raspberry_Pi_5 (Quad-Cortex-A76 @ 2.4GHz)": {
+                    "active_power_w": 5.0,
+                    "energy_per_inference_mj": 42.85,
+                    "estimated_inferences_per_3000mah_battery": "1,260,210"
+                },
+                "NVIDIA_Jetson_Nano (128-core Maxwell GPU / 4x A57)": {
+                    "active_power_w": 5.0,
+                    "energy_per_inference_mj": 42.85,
+                    "estimated_inferences_per_3000mah_battery": "1,260,210"
+                },
+                "NVIDIA_Jetson_Orin_Nano (Edge Gateway 7W mode)": {
+                    "active_power_w": 7.0,
+                    "energy_per_inference_mj": 59.99,
+                    "estimated_inferences_per_3000mah_battery": "900,150"
+                },
+                "Edge_Gateway_Intel_N100 (TDP 6W)": {
+                    "active_power_w": 6.0,
+                    "energy_per_inference_mj": 51.42,
+                    "estimated_inferences_per_3000mah_battery": "1,050,175"
+                }
+            }
+        },
+        "PyTorch_INT8": {
+            "iterations": 100,
+            "mean_latency_ms": 8.62,
+            "median_latency_ms": 8.51,
+            "p90_latency_ms": 8.79,
+            "p95_latency_ms": 9.33,
+            "p99_latency_ms": 10.02,
+            "min_latency_ms": 8.37,
+            "max_latency_ms": 10.33,
+            "throughput_fps": 116.0,
+            "memory_rss_mb": 731.7,
+            "model_size_mb": 12.73,
+            "runtime": "PyTorch INT8 (Dynamic)",
+            "energy_profile": {
+                "Raspberry_Pi_4B (Quad-Cortex-A72 @ 1.5GHz)": {
+                    "active_power_w": 3.8,
+                    "energy_per_inference_mj": 32.76,
+                    "estimated_inferences_per_3000mah_battery": "1,648,552"
+                },
+                "Raspberry_Pi_5 (Quad-Cortex-A76 @ 2.4GHz)": {
+                    "active_power_w": 5.0,
+                    "energy_per_inference_mj": 43.1,
+                    "estimated_inferences_per_3000mah_battery": "1,252,900"
+                },
+                "NVIDIA_Jetson_Nano (128-core Maxwell GPU / 4x A57)": {
+                    "active_power_w": 5.0,
+                    "energy_per_inference_mj": 43.1,
+                    "estimated_inferences_per_3000mah_battery": "1,252,900"
+                },
+                "NVIDIA_Jetson_Orin_Nano (Edge Gateway 7W mode)": {
+                    "active_power_w": 7.0,
+                    "energy_per_inference_mj": 60.34,
+                    "estimated_inferences_per_3000mah_battery": "894,928"
+                },
+                "Edge_Gateway_Intel_N100 (TDP 6W)": {
+                    "active_power_w": 6.0,
+                    "energy_per_inference_mj": 51.72,
+                    "estimated_inferences_per_3000mah_battery": "1,044,083"
+                }
+            }
+        },
+        "ONNX_Runtime": {
+            "iterations": 100,
+            "mean_latency_ms": 3.21,
+            "median_latency_ms": 3.19,
+            "p90_latency_ms": 3.31,
+            "p95_latency_ms": 3.35,
+            "p99_latency_ms": 3.69,
+            "min_latency_ms": 3.08,
+            "max_latency_ms": 3.74,
+            "throughput_fps": 311.7,
+            "memory_rss_mb": 787.59,
+            "model_size_mb": 0.4,
+            "runtime": "ONNX Runtime (Optimized Graph)",
+            "energy_profile": {
+                "Raspberry_Pi_4B (Quad-Cortex-A72 @ 1.5GHz)": {
+                    "active_power_w": 3.8,
+                    "energy_per_inference_mj": 12.2,
+                    "estimated_inferences_per_3000mah_battery": "4,426,955"
+                },
+                "Raspberry_Pi_5 (Quad-Cortex-A76 @ 2.4GHz)": {
+                    "active_power_w": 5.0,
+                    "energy_per_inference_mj": 16.05,
+                    "estimated_inferences_per_3000mah_battery": "3,364,485"
+                },
+                "NVIDIA_Jetson_Nano (128-core Maxwell GPU / 4x A57)": {
+                    "active_power_w": 5.0,
+                    "energy_per_inference_mj": 16.05,
+                    "estimated_inferences_per_3000mah_battery": "3,364,485"
+                },
+                "NVIDIA_Jetson_Orin_Nano (Edge Gateway 7W mode)": {
+                    "active_power_w": 7.0,
+                    "energy_per_inference_mj": 22.47,
+                    "estimated_inferences_per_3000mah_battery": "2,403,204"
+                },
+                "Edge_Gateway_Intel_N100 (TDP 6W)": {
+                    "active_power_w": 6.0,
+                    "energy_per_inference_mj": 19.26,
+                    "estimated_inferences_per_3000mah_battery": "2,803,738"
+                }
+            }
+        }
+    }
+}

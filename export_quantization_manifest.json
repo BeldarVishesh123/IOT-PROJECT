@@ -1,0 +1,29 @@
+{
+    "fp32_model": {
+        "path": "best_model.pth",
+        "size_mb": 16.3,
+        "format": "PyTorch FP32"
+    },
+    "pytorch_int8": {
+        "path": "./model_quantized_int8.pth",
+        "size_mb": 12.73,
+        "compression_ratio": "1.3x",
+        "format": "PyTorch Dynamic INT8"
+    },
+    "torchscript": {
+        "path": "./model_torchscript.pt",
+        "size_mb": 16.63,
+        "format": "TorchScript (C++ LibTorch Ready)"
+    },
+    "onnx": {
+        "path": "./model_mobilenetv3.onnx",
+        "size_mb": 0.4,
+        "format": "Open Neural Network Exchange (ONNX FP32)"
+    },
+    "fidelity_verification": {
+        "status": "PASSED (Perfect Match)",
+        "max_absolute_error": 3.9637088775634766e-06,
+        "mean_absolute_error": 1.929203563122428e-06,
+        "cosine_similarity": 1.0
+    }
+}

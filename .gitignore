@@ -1,0 +1,20 @@
+# Python Virtual Environment & Bytecode
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Unzipped Dataset Directory (Do not commit 20,000 unzipped images)
+PlantVillage/
+PlantVillage/**
+
+# Unsplit 329MB archive (Exceeds GitHub 100MB limit; use tracked PlantVillage.zip.part_* chunks)
+PlantVillage.zip
+
+# Jupyter Checkpoints & OS Artifacts
+.ipynb_checkpoints/
+.DS_Store
+*.tmp
+*.log
